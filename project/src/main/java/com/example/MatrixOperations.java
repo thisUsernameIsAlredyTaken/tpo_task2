@@ -63,11 +63,17 @@ public class MatrixOperations {
         for (int i = 0; i < height; i++) {
             for (int j = 0; j < width; j++) {
                 result[i][j] = 0.0;
-                for (int k = 0; k < aWidth; k++) {
+                for (int k = 0; k < bHeight; k++) {
                     result[i][j] += a[i][k] * b[k][j];
                 }
             }
         }
+        // for (int i = 0; i < result.length; i++) {
+        //     for (int j = 0; j < result[0].length; j++) {
+        //         System.out.print(result[i][j] + ' ');
+        //     }
+        //     System.out.println();
+        // }
         return result;
     }
 
